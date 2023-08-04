@@ -14,6 +14,7 @@ vector<int>solution(vector<int> progresses, vector<int> speeds)
 
     for (int i = 0; i < progresses.size(); i++) {
         day.push_back(ceil((float)(100 - progresses[i]) / speeds[i])); //진행 완료까지 걸리는 일 수 계산
+        //float으로 캐스팅하는게 매우 중요!!!!!!!
        
         if (day[i] > max_day) { //day[i]가 max_day보다 크면
             answer.push_back(1); //answer의 뒤에 1 추가
