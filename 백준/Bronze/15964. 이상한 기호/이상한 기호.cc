@@ -3,13 +3,13 @@
 using namespace std;
 int main()
 {
-    int a;
-    int b;
+    long long a;
+    long long b;
     
     cin>>a;
     cin>>b;
     
-    int result;
+    long result;
     result = (a+b)*(a-b);
     
     cout<<result;
